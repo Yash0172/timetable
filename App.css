@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4D7C8;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+::selection {
+  color: #800000;
+  background: #ffd800;
+}
+
+.container {
+  margin: 20px;
+}
+
+.form {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  position: relative;
+  bottom: 10px;
+  font-size: 2em;
+  margin: 15px 0 20px 0;
+  font-weight: 500;
+}
+
+.input-section, .output-section {
+  background-color: #f5f5f5;
+  border: 3px solid #800000;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.input-section hr {
+  width: 100%;
+  position: relative;
+  top: 5px;
+  border: 1.5px solid #ddd;
+}
+
+hr {
+  width: 100%;
+  position: relative;
+  top: 11px;
+  border: 1.5px solid #ddd;
+}
+
+.delete-all, #generate {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  margin: 20px 10px 0 0;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.delete-all:hover, #generate:hover {
+  background-color: #388e3c;
+}
+
+.delete-all:active, #generate:active {
+  background-color: #4CAF50;
+}
+
+.cta-button, .subject-controls button {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  margin: 10px 0 10px 0;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.cta-button:hover, .subject-controls button:hover {
+  background-color: #388e3c;
+}
+
+.cta-button:active, .subject-controls button:active {
+  background-color: #4CAF50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+tr {
+  display: table-row;
+  background-color: #F6EFE4;
+}
+
+th, td {
+  border: 2px solid #800000;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #FFC107;
+}
+
+table input {
+  width: 92%;
+}
+
+table select {
+  width: 100%;
+}
+
+table select.type {
+  font-size: 15px;
+}
+
+th:nth-child(1) {
+  width: 15%;
+}
+
+#teacherDetails {
+  font-size: 20px;
+  text-align: center;
+  line-height: 22px;
+}
+
+#saveimg {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  margin: 20px 10px 0 0;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: max-content;
+}
+
+#saveimg:hover {
+  background-color: #388e3c;
+}
+
+h4 {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 12px;
+  font-weight: 600;
+}
+
+input, select {
+  caret-color: #800000;
+  border: 3px solid #ddd;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 5px 5px 5px 0px;
+  width: -webkit-fill-available;
+  height: 30px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border: 3px solid #800000;
+}
+
+select {
+  height: 45px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 4em 0 1em;
+  cursor: pointer;
+}
+
+select option {
+  border-radius: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+select option:hover {
+  background-color: #4CAF50 !important;
+  color: black;
+}
+
+.subject-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: end;
+}
+
+.subject-controls label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+
+.subject-list {
+  margin: 15px ;
+}
+
+.delete {
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 10px;
+  background-color: #FF5733;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 25%;
+  position: relative;
+  left: 25%;
+}
+
+.delete:hover {
+  background-color: #C9302C;
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  .input-section, .output-section {
+    padding: 15px;
+  }
+  
+  .subject-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .subject-controls label {
+    min-width: auto;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  table input, table select {
+    font-size: 14px;
+  }
+}
